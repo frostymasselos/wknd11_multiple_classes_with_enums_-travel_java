@@ -64,11 +64,11 @@ public class FlightTest {
         assertEquals(660, flight1.returnFreeSeats());
     }
 
-//    @Test
-//    public void returnsNumberOfFreeSeats__WhenLoaded(){
-//        flight1.addPassenger(passenger1);
-//        assertEquals(659, flight1.returnFreeSeats());
-//    }
+    @Test
+    public void returnsNumberOfFreeSeats__WhenLoaded(){
+        flight1.addPassenger(passenger1);
+        assertEquals(659, flight1.returnFreeSeats());
+    }
 
 }
 
