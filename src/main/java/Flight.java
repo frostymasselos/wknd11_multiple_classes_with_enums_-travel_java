@@ -25,29 +25,29 @@ public class Flight {
         return plane;
     }
 
-//    public String getNumber() {
-//        return number;
-//    }
-//
-//    public String getDeparture() {
-//        return departure.getShortHand();
-//    }
-//
-//    public String getDestination() {
-//        return destination.getShortHand();
-//    }
-//
-//    public String getDepartureTime() {
-//        return departureTime;
-//    }
-//
-//    public void addPassenger(Passenger passenger1) {
-//        if (returnFreeSeats() >= 1){
-//            this.passengers.add(passenger1);
-//        }
-//    }
-//
-//    public int returnFreeSeats() {
-//        return plane.getCapacityFromPlaneType() - getPassengers();
-//    }
+    public String getNumber() {
+        return number;
+    }
+
+    public String getDeparture() {
+        return departure.getShortHand();
+    }
+
+    public String getDestination() {
+        return destination.getShortHand();
+    }
+
+    public String getDepartureTime() {
+        return departureTime;
+    }
+
+    public void addPassenger(Passenger passenger1) {
+        if (returnFreeSeats() >= 1){
+            this.passengers.add(passenger1);
+        }
+    }
+
+    public int returnFreeSeats() {
+        return plane.getCapacityFromPlaneType() - getPassengers();
+    }
 }
