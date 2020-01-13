@@ -20,55 +20,55 @@ public class FlightTest {
         assertEquals(0, flight1.getPassengers());
     }
 
-    @Test
-    public void getsPlane(){
-        assertEquals(plane1, flight1.getPlane());
-    }
-
-    @Test
-    public void getsFlightNumber(){
-        assertEquals("FR756", flight1.getNumber());
-    }
-
-    @Test
-    public void getsDeparture(){
-        assertEquals("PAR", flight1.getDestination());
-    }
-
-    @Test
-    public void getsDestination(){
-        assertEquals("EDI", flight1.getDeparture());
-    }
-
-    @Test
-    public void getsTimeOfDeparture(){
-        assertEquals("17:00", flight1.getDepartureTime());
-    }
-
-    @Test
-    public void addOnePassengerToFlight(){
-        flight1.addPassenger(passenger1);
-        assertEquals(1, flight1.getPassengers());
-    }
-
-    @Test
-    public void wontAddPassenger__WhenFull(){
-        for (int i = 0; i < flight1.getPlane().getCapacityFromPlaneType() + 1; i++) {
-            flight1.addPassenger(passenger1);
-        }
-        assertEquals(660, flight1.getPassengers());
-    }
-
-    @Test
-    public void returnsNumberOfFreeSeats__WhenEmpty(){
-        assertEquals(660, flight1.returnFreeSeats());
-    }
-
-    @Test
-    public void returnsNumberOfFreeSeats__WhenLoaded(){
-        flight1.addPassenger(passenger1);
-        assertEquals(659, flight1.returnFreeSeats());
-    }
+//    @Test
+//    public void getsPlane(){
+//        assertEquals(plane1, flight1.getPlane());
+//    }
+//
+//    @Test
+//    public void getsFlightNumber(){
+//        assertEquals("FR756", flight1.getNumber());
+//    }
+//
+//    @Test
+//    public void getsDeparture(){
+//        assertEquals("PAR", flight1.getDestination());
+//    }
+//
+//    @Test
+//    public void getsDestination(){
+//        assertEquals("EDI", flight1.getDeparture());
+//    }
+//
+//    @Test
+//    public void getsTimeOfDeparture(){
+//        assertEquals("17:00", flight1.getDepartureTime());
+//    }
+//
+//    @Test
+//    public void addOnePassengerToFlight(){
+//        flight1.addPassenger(passenger1);
+//        assertEquals(1, flight1.getPassengers());
+//    }
+//
+//    @Test
+//    public void wontAddPassenger__WhenFull(){
+//        for (int i = 0; i < flight1.getPlane().getCapacityFromPlaneType() + 1; i++) {
+//            flight1.addPassenger(passenger1);
+//        }
+//        assertEquals(660, flight1.getPassengers());
+//    }
+//
+//    @Test
+//    public void returnsNumberOfFreeSeats__WhenEmpty(){
+//        assertEquals(660, flight1.returnFreeSeats());
+//    }
+//
+//    @Test
+//    public void returnsNumberOfFreeSeats__WhenLoaded(){
+//        flight1.addPassenger(passenger1);
+//        assertEquals(659, flight1.returnFreeSeats());
+//    }
 
 }
 
