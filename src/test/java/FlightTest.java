@@ -40,11 +40,11 @@ public class FlightTest {
         assertEquals("EDI", flight1.getDeparture());
     }
 
-//    @Test
-//    public void getsTimeOfDeparture(){
-//        assertEquals("17:00", flight1.getDepartureTime());
-//    }
-//
+    @Test
+    public void getsTimeOfDeparture(){
+        assertEquals("17:00", flight1.getDepartureTime());
+    }
+
 //    @Test
 //    public void addOnePassengerToFlight(){
 //        flight1.addPassenger(passenger1);
