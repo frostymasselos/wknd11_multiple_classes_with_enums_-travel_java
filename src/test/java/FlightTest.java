@@ -20,11 +20,11 @@ public class FlightTest {
         assertEquals(0, flight1.getPassengers());
     }
 
-//    @Test
-//    public void getsPlane(){
-//        assertEquals(plane1, flight1.getPlane());
-//    }
-//
+    @Test
+    public void getsPlane(){
+        assertEquals(plane1, flight1.getPlane());
+    }
+
 //    @Test
 //    public void getsFlightNumber(){
 //        assertEquals("FR756", flight1.getNumber());
