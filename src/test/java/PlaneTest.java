@@ -15,9 +15,9 @@ public class PlaneTest {
     public void getsPlaneCapacity() {
         assertEquals(660, plane1.getCapacityFromPlaneType());
     }
-//
-//    @Test
-//    public void getsPlaneWeight() {
-//        assertEquals(183500, plane1.getWeightFromPlaneType());
-//    }
+
+    @Test
+    public void getsPlaneWeight() {
+        assertEquals(183500, plane1.getWeightFromPlaneType());
+    }
 }
