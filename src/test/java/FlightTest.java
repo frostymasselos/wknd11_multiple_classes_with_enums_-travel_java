@@ -51,14 +51,14 @@ public class FlightTest {
         assertEquals(1, flight1.getPassengers());
     }
 
-//    @Test
-//    public void wontAddPassenger__WhenFull(){
-//        for (int i = 0; i < flight1.getPlane().getCapacityFromPlaneType() + 1; i++) {
-//            flight1.addPassenger(passenger1);
-//        }
-//        assertEquals(660, flight1.getPassengers());
-//    }
-//
+    @Test
+    public void wontAddPassenger__WhenFull(){
+        for (int i = 0; i < flight1.getPlane().getCapacityFromPlaneType() + 1; i++) {
+            flight1.addPassenger(passenger1);
+        }
+        assertEquals(660, flight1.getPassengers());
+    }
+
 //    @Test
 //    public void returnsNumberOfFreeSeats__WhenEmpty(){
 //        assertEquals(660, flight1.returnFreeSeats());
